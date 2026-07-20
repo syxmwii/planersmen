@@ -27,19 +27,28 @@ jobs:
           xcodebuild -version
           xcode-select -p
 
-      - name: Build for iOS Simulator
+      - name: Build iOS archive
         run: |
           xcodebuild \
             -project Planersmen.xcodeproj \
             -scheme Planersmen \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
-            -configuration Debug \
-            -derivedDataPath build/DerivedData \
-            build
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/Planersmen.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            archive
+
+      - name: Package IPA artifact
+        run: |
+          mkdir -p build/ipa/Payload
+          cp -R "build/Planersmen.xcarchive/Products/Applications/Planersmen.app" build/ipa/Payload/
+          cd build/ipa
+          zip -r ../Planersmen.ipa Payload
 
       - name: Upload build artifact
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: Planersmen-app
-          path: build/DerivedData/Build/Products/Debug-iphonesimulator/**/*.app
+          name: Planersmen-ipa
+          path: build/Planersmen.ipa
