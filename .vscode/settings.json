@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd /workspaces/planersmen && git status --short && echo '---' && git add \\.github/workflows/ios\\.yml project\\.yml Planersmen\\.xcodeproj/xcshareddata/xcschemes/Planersmen\\.xcscheme && git commit -m \"Fix GitHub Actions iOS build workflow\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
