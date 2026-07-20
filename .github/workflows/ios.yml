@@ -12,18 +12,29 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Select Xcode version
-        run: sudo xcode-select -switch /Applications/Xcode_16.2.app
+      - name: Install XcodeGen
+        run: |
+          brew install xcodegen
+
+      - name: Generate Xcode project
+        run: |
+          xcodegen generate
+
+      - name: Show Xcode environment
+        run: |
+          xcodebuild -version
+          xcode-select -p
 
       - name: Build for iOS Simulator
         run: |
           xcodebuild \
-            -project Planersmen/Planersmen.xcodeproj \
+            -project Planersmen.xcodeproj \
             -scheme Planersmen \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
             -configuration Debug \
+            -derivedDataPath build/DerivedData \
             build
 
       - name: Upload build artifact
@@ -31,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Planersmen-app
-          path: build/Debug-iphonesimulator/**/*.app
+          path: build/DerivedData/Build/Products/Debug-iphonesimulator/**/*.app
