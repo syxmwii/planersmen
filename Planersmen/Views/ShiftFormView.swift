@@ -24,36 +24,56 @@ struct ShiftFormView: View {
 
     var body: some View {
         NavigationStack {
-            Form {
-                Section("Смена") {
-                    TextField("Название", text: $title)
-                    DatePicker("Начало", selection: $startDate, displayedComponents: [.date, .hourAndMinute])
-                    DatePicker("Окончание", selection: $endDate, displayedComponents: [.date, .hourAndMinute])
-                    TextField("Заметки", text: $notes, axis: .vertical)
-                        .lineLimit(3...6)
-                }
+            ZStack {
+                LinearGradient(
+                    colors: [Color(hex: "#0F172A"), Color(hex: "#312E81"), Color(hex: "#1D4ED8")],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .ignoresSafeArea()
 
-                Section("Цвет") {
-                    Picker("Оттенок", selection: $colorName) {
-                        ForEach(ShiftColor.allCases) { color in
-                            Text(color.rawValue.capitalized).tag(color.rawValue)
-                        }
+                Form {
+                    Section {
+                        TextField("Название", text: $title)
+                            .foregroundStyle(.white)
+                        DatePicker("Начало", selection: $startDate, displayedComponents: [.date, .hourAndMinute])
+                            .tint(.cyan)
+                        DatePicker("Окончание", selection: $endDate, displayedComponents: [.date, .hourAndMinute])
+                            .tint(.cyan)
+                        TextField("Заметки", text: $notes, axis: .vertical)
+                            .lineLimit(3...6)
+                            .foregroundStyle(.white)
                     }
-                    .pickerStyle(.segmented)
+                    .listRowBackground(Color.white.opacity(0.08))
+
+                    Section("Цвет") {
+                        Picker("Оттенок", selection: $colorName) {
+                            ForEach(ShiftColor.allCases) { color in
+                                Text(color.rawValue.capitalized).tag(color.rawValue)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+                    .listRowBackground(Color.white.opacity(0.08))
                 }
+                .scrollContentBackground(.hidden)
+                .background(.clear)
             }
             .navigationTitle(initialShift == nil ? "Новая смена" : "Редактировать")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Отмена") {
                         dismiss()
                     }
+                    .foregroundStyle(.white)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Сохранить") {
                         save()
                     }
                     .bold()
+                    .foregroundStyle(.white)
                 }
             }
         }
