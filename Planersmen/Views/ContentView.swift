@@ -200,11 +200,6 @@ extension Color {
     }
 }
 
-    private func color(for colorName: String) -> Color {
-        ShiftColor(rawValue: colorName)?.accentColor ?? .blue
-    }
-}
-
 #Preview {
     ContentView(store: ShiftStore())
 }
