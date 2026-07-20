@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        0123456789ABCDEF01234567 /* PlanersmenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1123456789ABCDEF01234567 /* PlanersmenApp.swift */; };
+        1234567890ABCDEF12345678 /* ShiftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2123456789ABCDEF01234567 /* ShiftStore.swift */; };
+        234567890ABCDEF23456789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123456789ABCDEF01234567 /* ContentView.swift */; };
+        34567890ABCDEF34567890 /* ShiftFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123456789ABCDEF01234567 /* ShiftFormView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        1123456789ABCDEF01234567 /* PlanersmenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanersmenApp.swift; sourceTree = "<group>"; };
+        2123456789ABCDEF01234567 /* ShiftStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ShiftStore.swift; sourceTree = "<group>"; };
+        3123456789ABCDEF01234567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+        4123456789ABCDEF01234567 /* ShiftFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ShiftFormView.swift; sourceTree = "<group>"; };
+        5123456789ABCDEF01234567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        6123456789ABCDEF01234567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        7123456789ABCDEF01234567 /* Planersmen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planersmen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        8123456789ABCDEF01234567 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        9123456789ABCDEF01234567 /* Planersmen */ = {
+            isa = PBXGroup;
+            children = (
+                1123456789ABCDEF01234567 /* PlanersmenApp.swift */,
+                9123456789ABCDEF01234568 /* Models */,
+                9123456789ABCDEF01234569 /* Views */,
+                5123456789ABCDEF01234567 /* Assets.xcassets */,
+                6123456789ABCDEF01234567 /* Info.plist */,
+            );
+            path = ".";
+            sourceTree = "<group>";
+        };
+        9123456789ABCDEF01234568 /* Models */ = {
+            isa = PBXGroup;
+            children = (
+                2123456789ABCDEF01234567 /* ShiftStore.swift */,
+            );
+            path = Models;
+            sourceTree = "<group>";
+        };
+        9123456789ABCDEF01234569 /* Views */ = {
+            isa = PBXGroup;
+            children = (
+                3123456789ABCDEF01234567 /* ContentView.swift */,
+                4123456789ABCDEF01234567 /* ShiftFormView.swift */,
+            );
+            path = Views;
+            sourceTree = "<group>";
+        };
+        A1234567890ABCDEF12345678 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                7123456789ABCDEF01234567 /* Planersmen.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        B1234567890ABCDEF12345678 /* Project object */ = {
+            isa = PBXGroup;
+            children = (
+                9123456789ABCDEF01234567 /* Planersmen */,
+                A1234567890ABCDEF12345678 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        C1234567890ABCDEF12345678 /* Planersmen */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = D1234567890ABCDEF12345678 /* Build configuration list for PBXNativeTarget "Planersmen" */;
+            buildPhases = (
+                E1234567890ABCDEF12345678 /* Sources */,
+                8123456789ABCDEF01234567 /* Frameworks */,
+                F1234567890ABCDEF12345678 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = Planersmen;
+            productName = Planersmen;
+            productReference = 7123456789ABCDEF01234567 /* Planersmen.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXResourcesBuildPhase section */
+        F1234567890ABCDEF12345678 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        E1234567890ABCDEF12345678 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                0123456789ABCDEF01234567 /* PlanersmenApp.swift in Sources */,
+                1234567890ABCDEF12345678 /* ShiftStore.swift in Sources */,
+                234567890ABCDEF23456789 /* ContentView.swift in Sources */,
+                34567890ABCDEF34567890 /* ShiftFormView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXProject section */
+        G1234567890ABCDEF12345678 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1600;
+                LastUpgradeCheck = 1600;
+                TargetAttributes = {
+                    C1234567890ABCDEF12345678 = {
+                        CreatedOnToolsVersion = 16.0;
+                    };
+                };
+            };
+            buildConfigurationList = H1234567890ABCDEF12345678 /* Build configuration list for PBXProject "Planersmen" */;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = B1234567890ABCDEF12345678 /* Project object */;
+            productRefGroup = A1234567890ABCDEF12345678 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                C1234567890ABCDEF12345678 /* Planersmen */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+        I1234567890ABCDEF12345678 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.planersmen;
+                PRODUCT_NAME = $(TARGET_NAME);
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.9;
+                TARGETED_DEVICE_FAMILY = 1;
+            };
+            name = Debug;
+        };
+        J1234567890ABCDEF12345678 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.planersmen;
+                PRODUCT_NAME = $(TARGET_NAME);
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.9;
+                TARGETED_DEVICE_FAMILY = 1;
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        D1234567890ABCDEF12345678 /* Build configuration list for PBXNativeTarget "Planersmen" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                I1234567890ABCDEF12345678 /* Debug */,
+                J1234567890ABCDEF12345678 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        H1234567890ABCDEF12345678 /* Build configuration list for PBXProject "Planersmen" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                I1234567890ABCDEF12345678 /* Debug */,
+                J1234567890ABCDEF12345678 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+
+    };
+    rootObject = G1234567890ABCDEF12345678 /* Project object */;
+}

@@ -1,0 +1,213 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        A1 /* PlanersmenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11 /* PlanersmenApp.swift */; };
+        A2 /* ShiftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12 /* ShiftStore.swift */; };
+        A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13 /* ContentView.swift */; };
+        A4 /* ShiftFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14 /* ShiftFormView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        11 /* PlanersmenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planersmen/PlanersmenApp.swift; sourceTree = "<group>"; };
+        12 /* ShiftStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planersmen/Models/ShiftStore.swift; sourceTree = "<group>"; };
+        13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planersmen/Views/ContentView.swift; sourceTree = "<group>"; };
+        14 /* ShiftFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planersmen/Views/ShiftFormView.swift; sourceTree = "<group>"; };
+        15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Planersmen/Assets.xcassets; sourceTree = "<group>"; };
+        16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Planersmen/Info.plist; sourceTree = "<group>"; };
+        17 /* Planersmen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planersmen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+        21 /* Project */ = {
+            isa = PBXGroup;
+            children = (
+                22 /* Planersmen */,
+                23 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        22 /* Planersmen */ = {
+            isa = PBXGroup;
+            children = (
+                11 /* PlanersmenApp.swift */,
+                24 /* Models */,
+                25 /* Views */,
+                15 /* Assets.xcassets */,
+                16 /* Info.plist */,
+            );
+            path = Planersmen;
+            sourceTree = "<group>";
+        };
+        24 /* Models */ = {
+            isa = PBXGroup;
+            children = (
+                12 /* ShiftStore.swift */,
+            );
+            path = Planersmen/Models;
+            sourceTree = "<group>";
+        };
+        25 /* Views */ = {
+            isa = PBXGroup;
+            children = (
+                13 /* ContentView.swift */,
+                14 /* ShiftFormView.swift */,
+            );
+            path = Planersmen/Views;
+            sourceTree = "<group>";
+        };
+        23 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                17 /* Planersmen.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        31 /* Planersmen */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 41 /* Build configuration list for PBXNativeTarget "Planersmen" */;
+            buildPhases = (
+                51 /* Sources */,
+                52 /* Frameworks */,
+                53 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = Planersmen;
+            productName = Planersmen;
+            productReference = 17 /* Planersmen.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        61 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1600;
+                LastUpgradeCheck = 1600;
+                TargetAttributes = {
+                    31 /* Planersmen */ = {
+                        CreatedOnToolsVersion = 16.0;
+                    };
+                };
+            };
+            buildConfigurationList = 71 /* Build configuration list for PBXProject "Planersmen" */;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 21 /* Project */;
+            productRefGroup = 23 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                31 /* Planersmen */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+        51 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A1 /* PlanersmenApp.swift in Sources */,
+                A2 /* ShiftStore.swift in Sources */,
+                A3 /* ContentView.swift in Sources */,
+                A4 /* ShiftFormView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+        53 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+        81 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Planersmen/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.planersmen;
+                PRODUCT_NAME = $(TARGET_NAME);
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.9;
+                TARGETED_DEVICE_FAMILY = 1;
+            };
+            name = Debug;
+        };
+        82 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Planersmen/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.planersmen;
+                PRODUCT_NAME = $(TARGET_NAME);
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.9;
+                TARGETED_DEVICE_FAMILY = 1;
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        41 /* Build configuration list for PBXNativeTarget "Planersmen" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                81 /* Debug */,
+                82 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        71 /* Build configuration list for PBXProject "Planersmen" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                81 /* Debug */,
+                82 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+
+    };
+    rootObject = 61 /* Project object */;
+}
